@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BCCI</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.linechart
+		{
+			
+			margin-top: 150px;
+			margin-left: 400px;
+			margin-bottom: 100px;
+		}
+		canvas {
+                border: 2px solid #d1d1d1;
+                border-radius: 10px;
+                padding: 20px;
+                background-color: #f1f1f1
+            }
+	</style>
+</head>
+<body>
+	<div class="linechart">
+		<h1>Board of Control for Cricket in India</h1>
+     <h3>     T20 Cricket Match Statistics</h3>
+	<canvas id="mycanvas" width="500" height="380" style="border:1px solid black;"></canvas>
+	<script>
+		var canvas=document.getElementById("mycanvas");
+		var ctx=canvas.getContext('2d');
+		ctx.moveTo(20,50);
+		ctx.lineTo(480,50);
+		ctx.moveTo(20,100);
+		ctx.lineTo(480,100);
+		ctx.moveTo(20,150);
+		ctx.lineTo(480,150);
+		ctx.moveTo(20,200);
+		ctx.lineTo(480,200);
+		ctx.moveTo(20,250);
+		ctx.lineTo(480,250);
+		ctx.moveTo(20,300);
+		ctx.lineTo(480,300);
+		ctx.moveTo(60,20);
+		ctx.lineTo(60,335);
+		ctx.moveTo(120,20);
+		ctx.lineTo(120,335);
+		ctx.moveTo(180,20);
+		ctx.lineTo(180,335);
+		ctx.moveTo(240,20);
+		ctx.lineTo(240,335);
+		ctx.moveTo(300,20);
+		ctx.lineTo(300,335);
+		ctx.moveTo(360,20);
+		ctx.lineTo(360,335);
+		ctx.moveTo(420,20);
+		ctx.lineTo(420,335);
+		/*ctx.moveTo(480,20);
+		ctx.lineTo(480,335);*/
+		ctx.strokeStyle='#5698ff';
+		ctx.stroke();
+		//line
+		ctx.moveTo(120,300);
+		ctx.lineTo(225,250);
+		ctx.moveTo(225,250);
+		ctx.lineTo(420,200);
+		ctx.strokeStyle='#5698ff';
+		ctx.stroke();
+		//...
+		ctx.beginPath();
+		ctx.moveTo(10,335);
+		ctx.lineTo(480,335);
+		ctx.moveTo(20,350);
+		ctx.lineTo(20,20)
+		ctx.strokeStyle='#000000';
+		ctx.stroke();
+		//...
+		ctx.strokeStyle='#000000';
+		ctx.strokeText('5',0,300);
+		ctx.strokeText('10',0,250);
+		ctx.strokeText('15',0,200);
+		ctx.strokeText('20',0,150);
+		ctx.strokeText('20',60,350);
+		ctx.strokeText('40',120,350);
+		ctx.strokeText('60',180,350);
+		ctx.strokeText('80',240,350);
+		ctx.strokeText('100',300,350);
+		ctx.strokeText('120',360,350);
+		ctx.strokeText('140',420,350);
+		ctx.strokeText('160',480,350);
+		//....
+		ctx.font = 'bold 13px Arial';
+        ctx.fillStyle = '#B03060';
+		ctx.fillText('X axix',120,370);
+		ctx.fillStyle='#B03060';
+		ctx.fillText('RUNS >',180,370);
+		ctx.fillText('OVER ^ Y axix',5,10);
+	</script>
+</div>
+</body>
+</html>
