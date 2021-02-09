@@ -1,2 +1,1 @@
 # Assignments
-Stock Trading App
